@@ -14,6 +14,10 @@ function App() {
     return 4
   })
 
+  //useState when dealing with objects 
+  const [state,setState] = useState({count:4,theme:"blue"});
+  const count3 = state.count;
+  const theme = state.theme;
   
  function decrement(){
   //these only work once because the count is always 4 so they override each others
@@ -37,6 +41,20 @@ function App() {
  function decrement1(){
   setCount2((prv)=> prv- 1);
  }
+
+
+ //to test the object
+
+ function encrement3(){
+  setState((prv)=>{
+    return { ...prv,count:prv.count + 1}
+  });
+ }
+ function decrement3(){
+  setState((prv)=> {
+    return {...prv,count:prv.count - 1 };
+  });
+ }
   return (
     <>
     <div>
@@ -50,6 +68,14 @@ function App() {
    <button onClick={decrement1}>-</button>
    <span>{count2}</span>
    <button onClick={encrement2}>+</button>
+   </div>
+
+   <h1>using objects</h1>
+   <div>
+   <button onClick={decrement3}>-</button>
+   <span>{count3}</span>
+   <span>{theme}</span>
+   <button onClick={encrement3}>+</button>
    </div>
    </>
   );
