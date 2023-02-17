@@ -1,5 +1,5 @@
 
-import { ACTIONS } from "./App";
+import { ACTIONS } from "./TodoApp";
 export default function Todo({todo,dispatch}){
     function handleDelete(){
         dispatch({
