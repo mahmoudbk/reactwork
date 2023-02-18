@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
 
+import { useLayoutEffect, useState } from "react";
 function App() {
+  const [width,setWidth] = useState(0);
+  useLayoutEffect(()=> {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize',handleResize);
+    handleResize();
+
+    return ()=> {
+      window.removeEventListener('resize',handleResize);
+    }
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+    <p>Window width : {width}px</p>
+   </div>
   );
 }
 
