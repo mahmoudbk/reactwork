@@ -8,6 +8,8 @@ export default function Login() {
     function handleLogin(e){
         e.preventDefault();
         login(username,password);
+        setUsername("");
+        setPassword("");
     }
     return (
         <>

@@ -43,7 +43,7 @@ function TodoApp() {
 
   const [todo, setTodo] = useState('');
   const [todos,dispatch] = useReducer(reducer,[])
-  const user = UseAuth();
+  const logout = UseAuth().logout;
   
 
   
@@ -56,7 +56,9 @@ function TodoApp() {
   }
   return (
   <>
-  <h1>Todo list</h1> 
+  <h1>Todo list</h1> <h3>
+    logout ? <button onClick={logout}>logout</button>
+  </h3>
 
   <form onSubmit={handleSubmit}>
     <input value={todo} onChange={(e)=> setTodo(e.target.value)} placeholder="enter your todo for today"/>
