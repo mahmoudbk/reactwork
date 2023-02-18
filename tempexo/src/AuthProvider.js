@@ -20,13 +20,13 @@ export const UseAuth = ()=> useContext(AuthContext);
 
 
 export default function AuthProvider({ children }){
-    const [user,setUser] = useState(null);
+    const [user,setUser] = useState(localStorage.getItem('username'));
     const login = (username,password)=>{
         //some login logic here
-       
+        console.log(localStorage.getItem('username'));
         users.users.map((u)=>{
             if(u.username==username && u.password==password){
-                console.log("user exists");
+               
                 setUser(u.username);
                
                 return true;
