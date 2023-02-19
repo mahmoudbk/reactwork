@@ -10,7 +10,7 @@ function PopUp({ onClose }){
       <h2>this is a popup as you can tell probably</h2>
       <button onClick={onClose}>closepop</button>
     </div>
-  ,document.body);
+  ,document.getElementById('portal'));
 }
 
 function App() {
