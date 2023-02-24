@@ -7,7 +7,7 @@ export default function Card({title,questions}) {
         <h3 className='q-title'>{title}</h3>
         <ul className='q-options'>
             {questions.map((q)=> {
-                return <li>q</li>
+                return <li key={q}>q</li>
             })}
         </ul>
     </div>

@@ -1,6 +1,15 @@
 import React from 'react'
+import { useState } from 'react';
+export default function Generator({changenumber}) {
+  const [number,SetNumber] = useState();
+  function handlenumber(e){
+    SetNumber(parseInt(e.target.value));
+  
+  }
 
-export default function Generator() {
+  function handleclick(){
+    changenumber(number)
+  }
   return (
     <div className='generator'>
 
@@ -14,10 +23,10 @@ export default function Generator() {
 
         <div>
             <label>Number of questions</label>
-            <input type="number"/>
+            <input type="number" onChange={handlenumber}/>
         </div>
 
-        <button>Generate</button>
+        <button onClick={handleclick}>Generate</button>
 
 
 
