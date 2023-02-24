@@ -1,0 +1,28 @@
+
+.generator {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #fcfcfc;
+}
+.generator button {
+  background-color: rgb(57, 117, 196);
+  color: white;
+  font-weight: bold;
+  width: 100px;
+  height: 35px;
+}
+
+.main {
+  background-color: #8d8d8d;
+  height: 100vh;
+  padding: 50px;;
+}
+
+.card {
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 25px;
+}
