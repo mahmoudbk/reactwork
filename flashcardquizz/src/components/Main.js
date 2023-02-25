@@ -14,6 +14,10 @@ export default function Main({numberqs}) {
       setCards(prv=> [...prv,<Card key={i+1} title="title" questions={["q1","q2"]}/>]);
      
     }
+
+    return  ()=> {
+      setCards([]);
+    }
   },[numberqs])
   return (
     <div className="main">

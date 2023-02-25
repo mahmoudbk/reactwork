@@ -2,7 +2,7 @@
 import './App.css';
 import Generator from './components/Generator';
 import Main from './components/Main';
-import { useState,useEffect } from 'react';
+import { useState } from 'react';
 function App() {
   const [numberqs,setNumbersQs] = useState(1);
 

@@ -1,4 +1,8 @@
 
+
+:root {
+  --transition:transform 0.6s ease-in-out;
+}
 .generator {
   display: flex;
   flex-wrap: nowrap;
@@ -16,14 +20,54 @@
 
 .main {
   background-color: #8d8d8d;
-  height: 100vh;
-  padding: 50px;;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  padding: 50px;
+  grid-gap: 15px;
+}
+
+.main ul li {
+  list-style-type: none ;
+  color: #929292;
+}
+.main ul {
+  margin: 0;
+  padding: 0;
 }
 
 .card {
   background-color: white;
   width: 300px;
+  height: 200px;
   padding: 20px;
   border-radius: 25px;
   margin-bottom:25px;
+  position: relative;
 }
+.card .back {
+  visibility: hidden;
+ 
+  
+}
+
+.card h3 {
+  margin: 0;
+}
+
+
+.card:hover  {
+  transform: rotateY(180deg);
+  transition: var(--transition);
+}
+.card:hover .back{
+  transform: rotateY(180deg);
+  
+  visibility: visible;
+  transition-delay: 0.3s;
+  
+}
+.card:hover .front {
+  visibility: hidden;
+
+}
+
