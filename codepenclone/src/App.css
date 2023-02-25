@@ -1,0 +1,77 @@
+/* starting the header styling */ 
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 0 8px;
+}
+
+header .logo-cont {
+  display: flex;
+  align-items: center;
+}
+
+header .logo-cont .author {
+  display: flex;
+  align-items: center;
+}
+header .logo-cont .author button {
+  font-size: .7rem;
+  height: 16px;
+  margin: 0;
+  background-color: #47cf73;
+ 
+}
+header .logo-cont .logo-text h1 , header .logo-cont .logo-text .author h4 {
+  margin: 0;
+}
+header .logo-cont .logo-text h1 {
+  font-size:1.3rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+header .logo-cont .logo-text .author h4{
+  font-size: 0.9rem;
+  color: hsl(233.3333333333deg 9.8901098901% 64.3137254902%);
+  font-weight: 400;
+}
+
+header .logo-cont .logo {
+  height: 30px;
+  fill: white;
+  margin-right: 5px;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+header nav ul li {
+list-style: none;
+cursor: pointer;
+line-height: 1.2;
+font-weight: 200;
+background-color: hsl(227deg 12% 30%);
+margin-right: 15px;
+padding: 12px;
+border-radius: 5px;
+font-size: 1rem;
+text-align: center;
+justify-content: center;
+letter-spacing: 1px;
+}
+
+header nav ul .signup {
+ background-color: hsl(139deg 59% 55%);
+ color: black;
+ font-weight: 400;
+}
+
+header nav ul .login {
+  
+  color: white;
+  font-weight: 400;
+ }
+
+/* end the header styling */
