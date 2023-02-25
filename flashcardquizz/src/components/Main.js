@@ -2,23 +2,26 @@ import React from 'react';
 import Card from './Card';
 
 import { useState,useEffect } from 'react';
-export default function Main({numberqs}) {
+import categories from '../data/data.json'
+export default function Main({numberqs, category}) {
 
  
   const [cards,setCards] = useState([]);
-
+ 
   useEffect(()=> {
-    
+ 
+    const cats  = categories.categories
     for(let i=0;i<numberqs;i++){
-      console.log(i);
-      setCards(prv=> [...prv,<Card key={i+1} title="title" questions={["q1","q2"]}/>]);
+     
+      setCards(prv=> [...prv,<Card key={i} title={cats[category].questions[i].question} options={[...cats[category].questions[i].options]} answer={cats[category].questions[i].answer}/>]);
      
     }
-
+   
+   
     return  ()=> {
       setCards([]);
     }
-  },[numberqs])
+  },[numberqs,category])
   return (
     <div className="main">
 

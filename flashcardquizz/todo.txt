@@ -1,0 +1,2 @@
+1 create a json file containing 3 categories each of which has a question with a number of options and an answer (done) 
+2 after clicking the generate category and number of questions to display  

@@ -1,0 +1,65 @@
+{
+    "categories": [
+      {
+        "name": "History",
+        "questions": [
+          {
+            "question": "In what year did Christopher Columbus discover America?",
+            "options": ["1492", "1500", "1525", "1550"],
+            "answer": "1492"
+          },
+          {
+            "question": "Who was the first president of the United States?",
+            "options": ["George Washington", "Abraham Lincoln", "Thomas Jefferson", "John F. Kennedy"],
+            "answer": "George Washington"
+          },
+          {
+            "question": "In what year did World War II end?",
+            "options": ["1944", "1945", "1946", "1950"],
+            "answer": "1945"
+          }
+        ]
+      },
+      {
+        "name": "Science",
+        "questions": [
+          {
+            "question": "What is the smallest unit of life?",
+            "options": ["Cell", "Molecule", "Atom", "Organism"],
+            "answer": "Cell"
+          },
+          {
+            "question": "Which planet in our solar system is known as the 'Red Planet'?",
+            "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+            "answer": "Mars"
+          },
+          {
+            "question": "What is the largest organ in the human body?",
+            "options": ["Liver", "Heart", "Brain", "Skin"],
+            "answer": "Skin"
+          }
+        ]
+      },
+      {
+        "name": "Sports",
+        "questions": [
+          {
+            "question": "Which country has won the most FIFA World Cup championships?",
+            "options": ["Brazil", "Argentina", "Germany", "Italy"],
+            "answer": "Brazil"
+          },
+          {
+            "question": "What is the highest score possible in a single turn in bowling?",
+            "options": ["10", "20", "30", "50"],
+            "answer": "30"
+          },
+          {
+            "question": "Which team has won the most NBA championships?",
+            "options": ["Chicago Bulls", "Los Angeles Lakers", "Boston Celtics", "Golden State Warriors"],
+            "answer": "Boston Celtics"
+          }
+        ]
+      }
+    ]
+  }
+  
